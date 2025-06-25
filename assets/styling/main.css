@@ -1,0 +1,76 @@
+:root {
+    --bar_height: 40px;
+    --bar_margin: 20px;
+    --border_width: 1px;
+
+    --anim_speed: 0.1s;
+
+    --text: #e8ece6;
+    --disabled: #9198a1;
+    --background: #090e07;
+    --primary: #a1da90;
+    --secondary: #328719;
+    --accent: #50f121;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+}
+
+* {
+    transition: color var(--anim_speed) ease;
+}
+
+.container {
+    max-width: 1200px;
+    display: table;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.linkable .linkable-handle {
+    color: var(--disabled);
+    cursor: pointer;
+    transition: color var(--anim_speed) ease;
+    margin-left: 10px;
+}
+
+.linkable:hover .linkable-handle {
+    color: var(--secondary);
+}
+
+.linkable-active {
+    color: var(--primary);
+}
+
+#links {
+    width: 400px;
+    text-align: left;
+    font-size: x-large;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+}
+
+#links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-top: 20px;
+    margin: 10px 0px;
+    border: var(--text) 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#links a:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#header {
+    max-width: 1200px;
+}
