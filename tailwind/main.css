@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "./page.css";
+@source "./src/**/*.{rs,html,css}";
+
+@theme {
+    --color-mint-500: oklch(1.72 0.11 178);
+
+    --text: #e8ece6;
+    --color-disabled: #3d444db3;
+    --color-background: #090e07;
+    --color-primary: #a1da90;
+    --color-secondary: #328719;
+    --color-accent: #50f121;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+span {
+    color: var(--text);
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+    box-sizing: border-box;
+    border: 0 solid;
+}

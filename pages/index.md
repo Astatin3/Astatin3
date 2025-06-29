@@ -1,13 +1,14 @@
 ## Code
 ```rust
 fn main() {
-    println!("hello world !")
+    println!("hello world !");
+    println1("1234")
 }
 ```
 
 # H1#
-## H2
-### H3
+## H2#
+### H3#
 #### H4
 ##### H5
 ###### H6
@@ -17,7 +18,8 @@ fn main() {
 
 - $e^{i\pi}+1=0$
 
-- Testing Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+- Testing Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. $\sqrt{a^2+b^2+c^2}$ Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
 
 $$\int_0^{+\infty}\dfrac{\sin(t)}{t}\,dt=\dfrac{\sqrt{\pi}}{2}$$
 

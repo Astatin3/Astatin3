@@ -14,6 +14,7 @@ pub fn Blog(id: usize) -> Element {
 
         div {
             id: "blog",
+            class: "bg-mint-500",
 
             // Content
             h1 { "This is blog #{id}!" }
