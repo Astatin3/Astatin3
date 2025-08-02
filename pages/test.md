@@ -1,4 +1,4 @@
-## Code
+## Code1234
 ```rust
 fn main() {
     println!("hello world !");
@@ -6,7 +6,7 @@ fn main() {
 }
 ```
 
-# H1#
+# H1 [#](#H1)
 ## H2#
 ### H3#
 #### H4
@@ -14,11 +14,11 @@ fn main() {
 ###### H6
 
 ## Math
-- $1+1=2$
+- $ 1+1=2 $
 
 - $e^{i\pi}+1=0$
 
-- Testing Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. $\sqrt{a^2+b^2+c^2}$ Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+- Testing Lorem[^1] ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. $\sqrt{a^2+b^2+c^2}$ Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
 
 $$\int_0^{+\infty}\dfrac{\sin(t)}{t}\,dt=\dfrac{\sqrt{\pi}}{2}$$
@@ -42,7 +42,6 @@ Wikilinks are supported to: [[https://en.wikipedia.org/wiki/Markdown|markdown]]
 
 > Testing
 
-
 ## Lists
 1) one
 2) two
@@ -55,3 +54,5 @@ Wikilinks are supported to: [[https://en.wikipedia.org/wiki/Markdown|markdown]]
 Even todo lists:
 - [ ] 1243
 - [x] 1243
+
+[^1]: This is a footnote.

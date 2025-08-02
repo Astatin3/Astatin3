@@ -2,8 +2,14 @@
 //! They can be used to defined common UI elements like buttons, forms, and modals. In this template, we define a Hero
 //! component and an Echo component for fullstack apps to be used in our app.
 
+mod container;
+mod header;
+#[allow(dead_code)]
 mod markdown;
-pub use markdown::MarkdownPage;
+mod markdown_page;
+
+pub use header::Header;
+pub use markdown_page::MarkdownPage;
 
 // mod echo;
 // pub use echo::Echo;

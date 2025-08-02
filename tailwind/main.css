@@ -1,23 +1,29 @@
-@import "tailwindcss";
 @import "./page.css";
-@source "./src/**/*.{rs,html,css}";
+@import "./navbar.css";
+@import "tailwindcss";
 
 @theme {
-    --color-mint-500: oklch(1.72 0.11 178);
-
     --text: #e8ece6;
     --color-disabled: #3d444db3;
-    --color-background: #090e07;
-    --color-primary: #a1da90;
+    /*--color-background: #090e07;*/
+    --color-background: #020408;
+    --color-primary: #124816;
     --color-secondary: #328719;
     --color-accent: #50f121;
+
+    --font-mono: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-background);
 }
 
-span {
+span,
+a {
     color: var(--text);
 }
 

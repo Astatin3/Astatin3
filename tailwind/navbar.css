@@ -1,0 +1,33 @@
+.header {
+    margin: 10px;
+    font-family: "UbuntuMono", "mono";
+}
+
+@font-face {
+    font-family: UbuntuMono;
+    font-style: mono;
+    src: url("/include/fonts/UbuntuMono.ttf") format("ttf");
+}
+
+.header .title::before {
+    content: "$ ";
+    color: var(--color-primary);
+}
+
+.header .title:after {
+    content: "█";
+    animation: blinker 1s step-end infinite;
+}
+
+.header .separator {
+    display: inline;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid var(--color-primary);
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

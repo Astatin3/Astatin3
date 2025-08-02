@@ -10,7 +10,7 @@ pub fn Home() -> Element {
     // let content = INDEX_PAGE.to_vec();
     rsx! {
         div {
-            MarkdownPage { src: "./pages/index.md" }
+            MarkdownPage { content: include_str!("../../README.md") }
         }
     }
 }
