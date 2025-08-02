@@ -6,9 +6,9 @@ fn main() {
 }
 ```
 
-# H1 [#](#H1)
-## H2#
-### H3#
+# H1 [#](#h1_test) # { #h1_test }
+## H2
+### H3
 #### H4
 ##### H5
 ###### H6
@@ -22,7 +22,8 @@ fn main() {
 
 
 $$\int_0^{+\infty}\dfrac{\sin(t)}{t}\,dt=\dfrac{\sqrt{\pi}}{2}$$
-
+$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+- inline: $\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ Testing1234
 
 ## Links and images
 ![](https://raw.githubusercontent.com/wooorm/markdown-rs/8924580/media/logo-monochromatic.svg?sanitize=true)

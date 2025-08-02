@@ -1,4 +1,4 @@
-use crate::components::{container::Container, header::Header, markdown::Markdown};
+use crate::components::markdown::Markdown;
 use dioxus::prelude::*;
 use pulldown_cmark::Options;
 
@@ -27,7 +27,7 @@ pub fn MarkdownPage(content: String) -> Element {
 
             Markdown {
                 src: content,
-                theme: "base16-eighties.dark",
+                theme: "base16-ocean.dark",
                 parse_options: Options::ENABLE_GFM
                     | Options::ENABLE_DEFINITION_LIST
                     | Options::ENABLE_TABLES
@@ -36,7 +36,8 @@ pub fn MarkdownPage(content: String) -> Element {
                     | Options::ENABLE_STRIKETHROUGH
                     | Options::ENABLE_YAML_STYLE_METADATA_BLOCKS
                     | Options::ENABLE_SMART_PUNCTUATION
-                    | Options::ENABLE_MATH,
+                    | Options::ENABLE_MATH
+                    | Options::ENABLE_HEADING_ATTRIBUTES,
             }
         // }
     }

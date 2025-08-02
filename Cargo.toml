@@ -2,17 +2,19 @@
 name = "astatin3"
 version = "0.1.0"
 authors = ["Michael Mikovsky <77305074+Astatin3@users.noreply.github.com>"]
-edition = "2021"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.41"
 dioxus = { version = "0.6.0", features = ["router", "fullstack"] }
-# dioxus-markdown = "0.0.1"
+lazy_static = "1.5.0"
 pulldown-cmark = "0.13.0"
-# pulldown-cmark = "0.13.0"
-# web-framework-markdown = { version = "*", features = ["maths"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.142"
 web-framework-markdown = { git = "https://github.com/Astatin3/rust-web-markdown" }
+# web-framework-markdown = { path = "/home/astatin3/Documents/GitHub/rust-web-markdown/web-markdown" }
 
 [features]
 default = ["web"]

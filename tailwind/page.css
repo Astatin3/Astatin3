@@ -2,3 +2,27 @@
     padding: 20px;
     /* padding-right: 80px; */
 }
+
+.markdown-body-dark h1 a span,
+.markdown-body-dark h2 a span,
+.markdown-body-dark h3 a span,
+.markdown-body-dark h4 a span,
+.markdown-body-dark h5 a span,
+.markdown-body-dark h6 a span {
+    color: var(--color-secondary);
+}
+
+.markdown-body-dark h1 a:hover span,
+.markdown-body-dark h2 a:hover span,
+.markdown-body-dark h3 a:hover span,
+.markdown-body-dark h4 a:hover span,
+.markdown-body-dark h5 a:hover span,
+.markdown-body-dark h6 a:hover span,
+.markdown-body-dark h1 a:link,
+.markdown-body-dark h2 a:link,
+.markdown-body-dark h3 a:link,
+.markdown-body-dark h4 a:link,
+.markdown-body-dark h5 a:link,
+.markdown-body-dark h6 a:link {
+    color: var(--color-primary);
+}

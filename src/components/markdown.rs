@@ -1,4 +1,4 @@
-use web_framework_markdown::{markdown_component, CowStr, MarkdownProps};
+use web_framework_markdown::{CowStr, MarkdownProps, markdown_component};
 
 use std::collections::BTreeMap;
 
@@ -122,76 +122,79 @@ impl<'src> Context<'src, 'static> for MdContext {
     ) -> Self::View {
         let class = attributes.classes.join(" ");
         let style = attributes.style.unwrap_or_default();
+        let id = attributes.id.unwrap_or_default();
+        // let attrs = attributes.attributes;
+        // println!("Class: {}", class);
         let onclick = attributes.on_click.unwrap_or_default();
         let onclick = move |e| onclick.call(e);
 
         match e {
             HtmlElement::Div => {
-                rsx! {div {onclick:onclick, style: "{style}", class: "{class}", {inside}} }
+                rsx! {div {onclick:onclick, id:"{id}", style: "{style}", class: "{class}", {inside}} }
             }
             HtmlElement::Span => {
-                rsx! {span {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {span {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Paragraph => {
-                rsx! {p {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {p {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::BlockQuote => {
-                rsx! {blockquote {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {blockquote {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Ul => {
-                rsx! {ul {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {ul {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Ol(x) => {
-                rsx! {ol {onclick: onclick, style: "{style}", class: "{class}", start: x as i64, {inside} } }
+                rsx! {ol {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", start: x as i64, {inside} } }
             }
             HtmlElement::Li => {
-                rsx! {li {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {li {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(1) => {
-                rsx! {h1 {onclick: onclick, style: "{style}", class: "linkable {class}", {inside} } }
+                rsx! {h1 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(2) => {
-                rsx! {h2 {onclick: onclick, style: "{style}", class: "linkable {class}", {inside} } }
+                rsx! {h2 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(3) => {
-                rsx! {h3 {onclick: onclick, style: "{style}", class: "linkable {class}", {inside} } }
+                rsx! {h3 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(4) => {
-                rsx! {h4 {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {h4 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(5) => {
-                rsx! {h5 {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {h5 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Heading(6) => {
-                rsx! {h6 {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {h6 {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
-            HtmlElement::Heading(_) => panic!(),
+            HtmlElement::Heading(_) => unreachable!(),
             HtmlElement::Table => {
-                rsx! {table {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {table {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Thead => {
-                rsx! {thead {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {thead {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Trow => {
-                rsx! {tr {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {tr {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Tcell => {
-                rsx! {td {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {td {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Italics => {
-                rsx! {i {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {i {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Bold => {
-                rsx! {b {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {b {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::StrikeThrough => {
-                rsx! {s {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {s {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Pre => {
-                rsx! {p {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {pre {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
             HtmlElement::Code => {
-                rsx! {code {onclick: onclick, style: "{style}", class: "{class}", {inside} } }
+                rsx! {code {onclick: onclick, id:"{id}", style: "{style}", class: "{class}", {inside} } }
             }
         }
     }
@@ -280,7 +283,8 @@ impl<'src> Context<'src, 'static> for MdContext {
             checked: checked,
             style: "{style}",
             class: "{class}",
-            onclick: onclick
+            onclick: onclick,
+            disabled: true,
         })
     }
 

@@ -7,7 +7,7 @@
     --color-disabled: #3d444db3;
     /*--color-background: #090e07;*/
     --color-background: #020408;
-    --color-primary: #124816;
+    --color-primary: #11cc11;
     --color-secondary: #328719;
     --color-accent: #50f121;
 
@@ -27,6 +27,10 @@ a {
     color: var(--text);
 }
 
+a:link {
+    color: var(--color-primary);
+}
+
 *,
 ::after,
 ::before,
@@ -43,4 +47,15 @@ a {
 ::file-selector-button {
     box-sizing: border-box;
     border: 0 solid;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--color-background);
+    background: var(--color-primary);
+}
+
+::selection {
+    color: var(--color-background);
+    background: var(--color-primary);
 }

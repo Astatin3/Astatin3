@@ -2,11 +2,6 @@ use dioxus::prelude::*;
 
 use crate::{components::container::Container, Route};
 
-pub struct Link {
-    pub href: String,
-    pub text: String,
-}
-
 #[component]
 pub fn Vseperator() -> Element {
     rsx! {
@@ -45,7 +40,7 @@ pub fn Header() -> Element {
                     Vseperator {},
 
                     a {
-                        href: "/test/",
+                        href: "/",
                         "TEST"
                     }
                 }
