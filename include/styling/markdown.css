@@ -1083,7 +1083,8 @@
     border-left-color: #1f6feb;
 }
 
-.markdown-body-dark .markdown-alert.markdown-alert-note .markdown-alert-title {
+.markdown-body-dark .markdown-alert.markdown-alert-note:before {
+    content: "🛈 Note";
     color: #4493f8;
 }
 
@@ -1091,9 +1092,8 @@
     border-left-color: #8957e5;
 }
 
-.markdown-body-dark
-    .markdown-alert.markdown-alert-important
-    .markdown-alert-title {
+.markdown-body-dark .markdown-alert.markdown-alert-important:before {
+    content: "🏷 Important";
     color: #ab7df8;
 }
 
@@ -1101,9 +1101,8 @@
     border-left-color: #9e6a03;
 }
 
-.markdown-body-dark
-    .markdown-alert.markdown-alert-warning
-    .markdown-alert-title {
+.markdown-body-dark .markdown-alert.markdown-alert-warning:before {
+    content: "⚠ Warning";
     color: #d29922;
 }
 
@@ -1111,7 +1110,8 @@
     border-left-color: #238636;
 }
 
-.markdown-body-dark .markdown-alert.markdown-alert-tip .markdown-alert-title {
+.markdown-body-dark .markdown-alert.markdown-alert-tip:before {
+    content: "🗱 Tip";
     color: #3fb950;
 }
 
@@ -1119,9 +1119,8 @@
     border-left-color: #da3633;
 }
 
-.markdown-body-dark
-    .markdown-alert.markdown-alert-caution
-    .markdown-alert-title {
+.markdown-body-dark .markdown-alert.markdown-alert-caution:before {
+    content: "🛑 Caution";
     color: #f85149;
 }
 

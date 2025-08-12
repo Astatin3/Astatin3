@@ -37,7 +37,8 @@ pub fn MarkdownPage(content: String) -> Element {
                     | Options::ENABLE_YAML_STYLE_METADATA_BLOCKS
                     | Options::ENABLE_SMART_PUNCTUATION
                     | Options::ENABLE_MATH
-                    | Options::ENABLE_HEADING_ATTRIBUTES,
+                    | Options::ENABLE_HEADING_ATTRIBUTES
+                    | Options::ENABLE_GFM,
             }
         // }
     }
