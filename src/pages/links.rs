@@ -6,11 +6,11 @@ use dioxus::prelude::*;
 
 /// The Home page component that will be rendered when the current route is `[Route::Home]`
 #[component]
-pub fn Home() -> Element {
+pub fn Links() -> Element {
     // let content = INDEX_PAGE.to_vec();
     rsx! {
         div {
-            MarkdownPage { content: include_str!("../../tabs/home.md") }
+            MarkdownPage { content: include_str!("../../tabs/links.md") }
         }
     }
 }

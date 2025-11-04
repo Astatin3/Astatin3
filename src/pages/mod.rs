@@ -1,6 +1,9 @@
 mod home;
 pub use home::Home;
 
+mod links;
+pub use links::Links;
+
 mod blog;
 pub use blog::Blog;
 

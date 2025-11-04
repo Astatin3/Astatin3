@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use crate::{components::container::Container, Route};
+use crate::{Route, components::container::Container};
 
 #[component]
 pub fn Vseperator() -> Element {
@@ -33,16 +33,16 @@ pub fn Header() -> Element {
                     Vseperator {},
 
                     a {
-                        href: "/blog/",
-                        "BLOG"
+                        href: "/links/",
+                        "LINKS"
                     },
 
-                    Vseperator {},
+                    // Vseperator {},
 
-                    a {
-                        href: "/",
-                        "TEST"
-                    }
+                    // a {
+                    //     href: "/",
+                    //     "TEST"
+                    // }
                 }
             }
 

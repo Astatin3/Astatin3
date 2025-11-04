@@ -3,7 +3,7 @@ mod page_loader;
 mod pages;
 
 use dioxus::prelude::*;
-use pages::{Blog, BlogPage, Home, NotFound};
+use pages::{Blog, Home, Links, NotFound};
 
 use crate::components::Header;
 
@@ -14,12 +14,14 @@ pub enum Route {
     #[route("/")]
     Home {},
 
-    #[route("/blog/")]
-    Blog {},
+    #[route("/links")]
+    Links {},
 
-    #[route("/blog/:short_name")]
-    BlogPage { short_name: String },
+    // #[route("/blog/")]
+    // Blog {},
 
+    // #[route("/blog/:short_name")]
+    // BlogPage { short_name: String },
     #[route("/:..route")]
     NotFound { route: Vec<String> },
 }
