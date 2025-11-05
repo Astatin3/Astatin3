@@ -1,17 +1,23 @@
 .header {
     margin: 10px;
-    font-family: "UbuntuMono", "mono";
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-@font-face {
+/*@font-face {
     font-family: UbuntuMono;
     font-style: mono;
     src: url("/include/fonts/UbuntuMono.ttf") format("ttf");
-}
+}*/
 
 .header .title::before {
     content: "$ ";
     color: var(--color-primary);
+}
+
+.header a:link {
+    color: var(--text);
 }
 
 .header .title:after {

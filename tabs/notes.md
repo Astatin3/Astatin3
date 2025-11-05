@@ -1,2 +1,2 @@
-# Links
+# Notes
 - Add more here

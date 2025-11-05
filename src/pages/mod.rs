@@ -7,6 +7,9 @@ pub use links::Links;
 mod blog;
 pub use blog::Blog;
 
+mod notes;
+pub use notes::Notes;
+
 mod blog_page;
 pub use blog_page::BlogPage;
 

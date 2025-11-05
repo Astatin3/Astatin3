@@ -37,6 +37,13 @@ pub fn Header() -> Element {
                         "LINKS"
                     },
 
+                    Vseperator {},
+
+                    a {
+                        href: "/notes/",
+                        "NOTES"
+                    },
+
                     // Vseperator {},
 
                     // a {
