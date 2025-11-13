@@ -4,5 +4,17 @@
     "short_name": "test_blog_post",
     "path": "pages/test.md",
     "timestamp": "Tue, 1 Jul 2003 10:52:37 +0200"
+  },
+  {
+    "title": "Test Blog Post",
+    "short_name": "test_blog_post2",
+    "path": "pages/rustex.md",
+    "timestamp": "Tue, 1 Jul 2003 10:52:37 +0200"
+  },
+  {
+    "title": "Schedule",
+    "short_name": "schedule",
+    "path": "pages/schedule.md",
+    "timestamp": "Tue, 1 Jul 2003 10:52:37 +0200"
   }
 ]
