@@ -27,21 +27,28 @@ pub fn Header() -> Element {
                     class: "absolute inset-y-0 right-0",
                     a {
                         href: "/",
-                        "HOME"
+                        "Home"
                     },
 
                     Vseperator {},
 
                     a {
-                        href: "/links/",
-                        "LINKS"
+                        href: "/schedule/",
+                        "Schedule"
                     },
 
                     Vseperator {},
 
                     a {
-                        href: "/notes/",
-                        "NOTES"
+                        href: "/rustex/",
+                        "RusTeX"
+                    },
+
+                    Vseperator {},
+
+                    a {
+                        href: "/test/",
+                        "Test Page"
                     },
 
                     // Vseperator {},

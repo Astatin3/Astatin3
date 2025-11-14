@@ -3,9 +3,10 @@ mod page_loader;
 mod pages;
 
 use dioxus::prelude::*;
-use pages::{BlogPage, Home, Links, NotFound, Notes};
+use pages::BlogPage;
+use pages::NotFound;
 
-use crate::components::Header;
+use crate::components::{Header, MarkdownPage};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 // #[rustfmt::skip]
@@ -14,11 +15,17 @@ pub enum Route {
     #[route("/")]
     Home {},
 
-    #[route("/links")]
-    Links {},
+    #[route("/schedule")]
+    Schedule {},
 
-    #[route("/notes")]
-    Notes {},
+    #[route("/rustex")]
+    RusTeX {},
+
+    #[route("/test")]
+    TestPage {},
+
+    // #[route("/notes")]
+    // Notes {},
 
     // #[route("/blog/")]
     // Blog {},
@@ -45,4 +52,44 @@ fn App() -> Element {
 fn main() {
     // page_loader::load_pages();
     dioxus::launch(App);
+}
+
+#[component]
+pub fn Home() -> Element {
+    // let content = INDEX_PAGE.to_vec();
+    rsx! {
+        div {
+            MarkdownPage { content: include_str!("../tabs/home.md") }
+        }
+    }
+}
+
+#[component]
+pub fn Schedule() -> Element {
+    // let content = INDEX_PAGE.to_vec();
+    rsx! {
+        div {
+            MarkdownPage { content: include_str!("../tabs/schedule.md") }
+        }
+    }
+}
+
+#[component]
+pub fn RusTeX() -> Element {
+    // let content = INDEX_PAGE.to_vec();
+    rsx! {
+        div {
+            MarkdownPage { content: include_str!("../tabs/rustex.md") }
+        }
+    }
+}
+
+#[component]
+pub fn TestPage() -> Element {
+    // let content = INDEX_PAGE.to_vec();
+    rsx! {
+        div {
+            MarkdownPage { content: include_str!("../tabs/test.md") }
+        }
+    }
 }

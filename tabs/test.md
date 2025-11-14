@@ -1,0 +1,76 @@
+# Test page
+
+This is a page that I made a while ago, that tests the different format options that in this website
+
+## Code1234
+```rust
+fn main() {
+    println!("hello world !");
+    println1("1234")
+}
+```
+
+# H1 [#](#h1_test) # { #h1_test }
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+## Math
+- $1+1=2$
+
+- $e^{i\pi}+1=0$
+
+- Testing Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. $\sqrt{a^2+b^2+c^2}$ Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+
+$$\int_0^{+\infty}\dfrac{\sin(t)}{t}\,dt=\dfrac{\sqrt{\pi}}{2}$$
+$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+- inline: $\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ Testing1234
+
+## Links and images
+![](https://raw.githubusercontent.com/wooorm/markdown-rs/8924580/media/logo-monochromatic.svg?sanitize=true)
+
+for markdown documentation, see [here](https://commonmark.org/help/)
+
+Wikilinks are supported to: [[https://en.wikipedia.org/wiki/Markdown|markdown]]
+
+## Style
+| unstyled | styled    |
+| :-----:  | ------    |
+| bold     | **bold**  |
+| italics  | *italics* |
+| strike   | ~strike~  |
+
+> Hey, I am a quote
+
+> Testing
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+## Lists
+1) one
+2) two
+3) three
+
+- and
+- unorderded
+- too
+
+Even todo lists:
+- [ ] 1243
+- [x] 1243
